@@ -1,29 +1,95 @@
+<                ?php   /*
+
+	include_once('session_validate.php') ;
+	
+	date_default_timezone_set ('Europe/Lisbon');	// lipsi oras toy server kai topo8etisi tou se metablites gia xrisi tou hmerologiou javascript
+	$date = getdate();
+	$year=$date['year'];
+	$day=$date['mday'];
+	$month=$date['mon'];
+?>
+*/
+
+
+
+<html>
+<!-- <head>
+
+	<link rel="stylesheet" href="http://localhost/jQuery_UI_Datepicker/jquery-ui.css">
+	<script src="http://localhost/jQuery_UI_Datepicker/jquery-1.9.1.js"></script>
+	<script src="http://localhost/jQuery_UI_Datepicker/jquery-ui.js"></script>
+
+	<script type="text/javascript">
+		$(function() 	
+		{
+			$( "#SelectDate" ).datepicker({ dateFormat: "yy-mm-dd"}).val()  
+		});
+	</script>
+
+</head > -->
+
+
+<body>
+
+
+
 <div>
-	<form>
+	<form action="../calls/insert_garage_to_database.php" method="get">
+		
 		Title
-		<input/>
-		<br>
+			<br>
+			<input type="text" name="title">
+			<br>
+		
 		Address
-		<input/>
-		<br>
+			<br>
+			<input type="text" name="address">
+			<br><br>
+		
 		Type
-		<input type="radio" name="type" value="open">
-		open
-		<input type="radio" name="type" value="sheltered">
-		sheltered
-		<input type="radio" name="type" value="indoors">
-		indoors
-		<br>
+			<input type="radio" name="type" value="open">
+			Open
+			
+			<input type="radio" name="type" value="sheltered">
+			Sheltered
+			
+			<input type="radio" name="type" value="indoors">
+			Indoors
+			
+			<br><br>
 		Security
-		<input type="radio" name="security" value="open">
-		open
-		<input type="radio" name="type" value="locked">
-		locked
-		<input type="radio" name="type" value="guarded">
-		guarded <br>
-		From<br><input/>
-		To <input/> <br>
-		Price <input /> per day
-		<input />
+			<input type="radio" name="security" value="open">
+			Open
+			
+			<input type="radio" name="security" value="locked">
+			Locked
+			
+			<input type="radio" name="security" value="guarded">
+			Guarded 
+			
+			<br><br>
+			
+		From
+			<br><br>
+			<input type="text" name="from.start">
+					To 
+					<input type="text" name="from.end">
+					<br><br>
+					
+		Price 
+			<br>
+			<input type="text" name="price.start">
+				Per Day
+				<input type="text" name="price.end">
+			
+		
+			<br><br>
+			<input type="submit">
 	</form>
+	
 </div>
+
+
+</body>
+
+</html>
