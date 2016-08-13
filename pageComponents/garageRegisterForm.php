@@ -1,21 +1,20 @@
-<                ?php   /*
+<?php
 
-	include_once('session_validate.php') ;
-	
 	date_default_timezone_set ('Europe/Lisbon');	// lipsi oras toy server kai topo8etisi tou se metablites gia xrisi tou hmerologiou javascript
 	$date = getdate();
 	$year=$date['year'];
 	$day=$date['mday'];
 	$month=$date['mon'];
 ?>
-*/
+
+
 
 
 
 <html>
 
 
-<!--
+
 
  <head>
 
@@ -32,7 +31,7 @@
 
 </head > 
 
--->
+
 
 
 <body>
@@ -76,20 +75,16 @@
 			<br><br>
 			
 		From
-			<br><br>
 			<input type="text" name="from_start">
 					To 
 					<input type="text" name="from_end">
 					<br><br>
 					
 		Price 
-			<br>
 			<input type="text" name="price_start">
-				Per Day
-				<input type="text" name="price_end">
-			
+				
 		
-			<br><br>
+			<br><br><br>
 			<input type="submit">
 	</form>
 	
