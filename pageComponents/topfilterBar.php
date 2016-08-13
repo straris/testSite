@@ -1,13 +1,13 @@
 <div>
-	<form action="searchResults.php" method="get">
+	<form action="resultsGrid.php" method="get">
 		From
-		<input /> To
-		<input />
+		<input type="text" name="fromData"/> To
+		<input type="text" name="toDate"/>
 		<br>
 		Where
-		<input />
+		<input type="text"/>
+		<br>
 		Price
-		<input />
-		<input />
+		<input type="text" name="price"/>
 	</form>
 </div>
